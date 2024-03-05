@@ -1,6 +1,17 @@
+import { useEffect, useState } from 'react';
 import './Get.scss';
 
-export const Get = ({ users }) => {
+export const Get = () => {
+  const [users, setUsers] = useState([]);
+  const [count, setCount] = useState(1)
+
+  useEffect(() => {
+    fetch(`https://frontend-test-assignment-api.abz.agency/api/v1/users?page=1&count=${6 * count}`)
+      .then(res => res.json())
+      .catch(() => console.log('Oops, something went wrong!'))
+      .then(data => setUsers(data.users))
+  }, [count]);
+
   return (
     <div className="get">
       <div className="container">
@@ -20,7 +31,10 @@ export const Get = ({ users }) => {
               </div>
             ))}
           </div>
-          <button className="get__btn">
+          <button
+            className="get__btn"
+            onClick={() => setCount(prev => prev + 1)}
+          >
             Show more
           </button>
         </div>
