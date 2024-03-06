@@ -47,6 +47,10 @@
     width: 328px;
     height: 254px;
 
+    @media (min-width: 1024px) {
+      width: 282px;
+    }
+
     &--img {
       width: 70px;
       height: 70px;
