@@ -13,7 +13,7 @@ export const Get = () => {
   }, [count]);
 
   return (
-    <div className="get">
+    <div className="get" id="get">
       <div className="container">
         <div className="get__body">
           <h1 className="get__title">

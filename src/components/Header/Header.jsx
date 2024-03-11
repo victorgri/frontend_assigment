@@ -12,8 +12,8 @@ export const Header = () => {
           />
         </a>
         <div className="header__top--buttons">
-          <a href="/" className="header__top--button">Users</a>
-          <a href="/" className="header__top--button header__top--button-2">Sign up</a>
+          <a href="#get" className="header__top--button">Users</a>
+          <a href="#post" className="header__top--button header__top--button-2">Sign up</a>
         </div>
 
       </div>

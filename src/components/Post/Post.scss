@@ -25,6 +25,8 @@
     gap: 50px;
 
     &--pos {
+      display: flex;
+      gap: 12px;
       font-family: "Nunito", sans-serif;
       font-size: 16px;
       line-height: 26px;
@@ -90,14 +92,14 @@
         height: 54px;
         border: 1px solid #D0CFCF;
         border-radius: 4px;
-        padding: 14px 95px 14px 16px;
+        padding: 15px 93px 15px 16px;
         font-family: "Nunito", sans-serif;
         font-size: 16px;
         line-height: 16px;
         color: #7e7e7e;
 
         @media (min-width:768px) {
-          padding: 14px 160px 14px 16px;
+          padding: 15px 160px 15px 16px;
         }
       }
     }
